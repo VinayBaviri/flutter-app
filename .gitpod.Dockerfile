@@ -33,7 +33,7 @@ RUN mkdir -p /home/gitpod/android-sdk && \
   unzip sdk-tools-linux-4333796.zip && \
   rm -f sdk-tools-linux-4333796.zip
 
-RUN $FLUTTER_HOME/bin/flutter channel master && $FLUTTER_HOME/bin/flutter config --enable-web
+RUN $FLUTTER_HOME/bin/flutter channel stable && $FLUTTER_HOME/bin/flutter config --enable-web
 
 # Change the PUB_CACHE to /workspace so dependencies are preserved.
 ENV PUB_CACHE=/workspace/.pub_cache
