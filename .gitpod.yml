@@ -10,6 +10,7 @@ tasks:
       flutter update-packages --force-upgrade &&
       flutter run -d web-server --no-resident # prebuilds the app
     command: >
+      cd FLUTTER
       flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0
 
 vscode:
